@@ -1,0 +1,160 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'bebasneueregular';
+    src: url('fonts/Bebas-Neue-Pro-Regular-BF66cf3d7814160.ttf'), format ('opentype');
+}
+@font-face {
+    font-family: 'bebasneuebold';
+    src: url('fonts/BebasNeue\ Bold.ttf'), format ('opentype');
+}
+
+:root{
+    --cor1:white;
+    --cor2:#e0e0e0;
+    --cor3:#0090ff;
+    --cor4:#181818;
+    --cor5:black;
+
+    /*da pra fazer das fonts*/
+}
+
+body{
+    margin: 0px;
+
+    header{
+        text-align: center;
+        margin-top: 10px;
+        a{
+            color: var(--cor1);
+        }
+
+        div{
+            font-family: 'bebasneuebold';
+            font-size: 1.5em;
+            display: inline-block; /*mesma linha*/
+            color: var(--cor4);
+            /*border: 2px solid var(--cor5); /*Handbreak de borda*/
+            min-width: 30px; /*largura*/
+            padding-top: 10px;
+            height: 22%; /*altura*/
+        }
+        div.basico{
+            text-align: left;
+            margin-left: 40px;
+            float: left;
+        }
+        div.basico:hover{ /*AO PASSAR O MOUSE -> HOVER é uma pseudoclasse*/
+            color: var(--cor3);
+            transition-duration: .5s;
+        }
+        div.linkavel:hover{ /*AO PASSAR O MOUSE -> HOVER é uma pseudoclasse*/
+            color: var(--cor3);
+            transition-duration: .5s;
+        }
+        div.linkavel{
+            text-align: right;
+            float: right;
+            margin-right: 40px;
+        }
+        div.linkavel:hover{ /*AO PASSAR O MOUSE -> HOVER é uma pseudoclasse*/
+            color: var(--cor3);
+            text-decoration: underline;
+            transition-duration: .5s;
+        }
+        .bebasbold {
+            font-family: 'bebasneuebold';
+            font-weight: bold;
+            } /*O último se sobressai */
+
+        div a {
+            color: inherit; /*GPT*/
+            text-decoration: none;
+        }
+        div a:visited,
+        div a:active {
+            color: inherit;
+            text-decoration: none;
+        }
+    }  
+ 
+    main{
+        margin-top: 100px;
+        h1{
+            font-family: 'bebasneuebold';
+            font-size:3em;
+            text-align: left;
+            padding-left: 40px;
+            margin: 0px;
+            max-width: 50%;
+            #nome{
+                color: var(--cor3);
+            }
+        }
+        p{
+            padding-left: 40px;
+            font-family: 'bebasneueregular';
+            font-size:1em;
+            text-align: left;
+            max-width: 50%;
+        
+        }
+        img.ftperfil{
+            max-width: 180px;
+            padding: 0 0 30px 15PX;
+            float: right;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            }
+        }
+        
+    footer{
+        text-align: center;
+        padding-top: 30px;;
+        margin-top: 50px;
+        background-color: var(--cor4);
+        height: 200px;
+        border-bottom: 40px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        
+        h1{
+            text-align: left;
+            padding-left: 40px;
+            padding-right: 0px;
+            color: var(--cor1);
+            font-family: 'bebasneuebold';
+            margin: 0px;
+            max-width: 30%;
+        }
+
+        img#contatos {
+            width: 35px;
+            height: auto;
+            padding: 0 0 5px 5px;
+        }
+        p{
+            font-family:'bebasneueregular';
+            color: var(--cor1);
+        }
+        
+        img#contatos:hover {
+            opacity: 90%;
+            /*margin-top:2px;*/
+        }
+        .linkedin:hover{
+            filter: drop-shadow(
+            2px 2px 0px var(--cor2));}
+        .github:hover{
+            filter: drop-shadow(
+            2px 2px 0px var(--cor3));}
+        .email:hover{
+            filter: drop-shadow(
+            2px 2px 0px var(--cor2));}
+    } 
+}
+
+/*
+a::after{ DOIS PONTOS REPRESENTA UM PSEUDOELEMENTO, QUE ADICIONA CONTEÚDO VIA CSS, NO CASO AQUI UMA SETA.
+    content: '⬇'; 
+}*/
