@@ -8,6 +8,10 @@
     src: url('fonts/BebasNeue\ Bold.ttf'), format ('opentype');
 }
 
+@font-face {
+    font-family: 'bebasneueextrabold';
+    src: url(fonts/Bebas-Neue-Pro-Expanded-ExtraBold-BF66cf3d793166e.ttf), format('opentype');
+}
 :root{
     --cor1:white;
     --cor2:#e0e0e0;
@@ -24,13 +28,15 @@ body{
     header{
         text-align: center;
         margin-top: 10px;
+        
         a{
             color: var(--cor1);
         }
 
         div{
+            text-transform: uppercase; /*maiusculas*/
             font-family: 'bebasneuebold';
-            font-size: 1.5em;
+            font-size: clamp(10px, 4.5vw, 35px);
             display: inline-block; /*mesma linha*/
             color: var(--cor4);
             /*border: 2px solid var(--cor5); /*Handbreak de borda*/
@@ -40,7 +46,7 @@ body{
         }
         div.basico{
             text-align: left;
-            margin-left: 40px;
+            margin-left: 7vw;
             float: left;
         }
         div.basico:hover{ /*AO PASSAR O MOUSE -> HOVER é uma pseudoclasse*/
@@ -54,7 +60,7 @@ body{
         div.linkavel{
             text-align: right;
             float: right;
-            margin-right: 40px;
+            margin-right: 7vw;
         }
         div.linkavel:hover{ /*AO PASSAR O MOUSE -> HOVER é uma pseudoclasse*/
             color: var(--cor3);
@@ -77,50 +83,94 @@ body{
         }
     }  
  
-    main{
-        margin-top: 100px;
+    main.nome {
+        margin-top: clamp(60px, 10vw, 100px);
+        padding-left: 7vw;
         h1{
+            font-weight: bold;
             font-family: 'bebasneuebold';
-            font-size:3em;
+            /*font-size:3em; /* vw */
+            font-size: clamp(30px, 11vw, 80px);
             text-align: left;
-            padding-left: 40px;
             margin: 0px;
-            max-width: 50%;
+            line-height: clamp(50px, 9vw, 65px);
+
             #nome{
                 color: var(--cor3);
             }
         }
         p{
-            padding-left: 40px;
+            margin-top: 8px;
             font-family: 'bebasneueregular';
             font-size:1em;
             text-align: left;
-            max-width: 50%;
+            max-width: 45%;
         
         }
         img.ftperfil{
             max-width: 180px;
-            padding: 0 0 30px 15PX;
+            padding-right: 7vw;
             float: right;
-            margin-right: 40px;
-            margin-bottom: 40px;
             }
         }
+
+    h1.projetos{
+    font-weight: bold;
+    font-family: 'bebasneuebold';
+    /*font-size:3em; /* vw */
+    font-size: clamp(25px, 8vw, 50px);
+    text-align: left;
+    margin-top: 25px;
+    padding-left: 7vw;
+    margin: 0px;
+    }
+    section {
+        display: flex;
+        padding-left: 7vw;
+        padding-right: 7vw;
+        h2{
+            font-family: 'bebasneuebold';
+            line-height: 0px;
+        }
+        p{
+            font-family: 'bebasneueregular';
+        }
+
+
+    article{
+        width: 33%;
+    }
+    iframe{
+        height: 100px;
+        width: 100%;
+    }
+    }
         
     footer{
-        text-align: center;
+        display: flex;
         padding-top: 30px;;
         margin-top: 50px;
         background-color: var(--cor4);
-        height: 200px;
+        height: clamp(10%, calc(180px - 6vw), 25%);
         border-bottom: 40px;
         position: fixed;
         bottom: 0;
         width: 100%;
+
+        #conteudo{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
         
         h1{
+            position: absolute;
+            top: 45%;
+            transform: translate(0%, -50%);
+            font-size:3em;
+            padding-left: 7vw;
             text-align: left;
-            padding-left: 40px;
             padding-right: 0px;
             color: var(--cor1);
             font-family: 'bebasneuebold';
@@ -129,11 +179,17 @@ body{
         }
 
         img#contatos {
-            width: 35px;
+            margin-left: 33%;
+            width: 30px;
             height: auto;
-            padding: 0 0 5px 5px;
+            padding: 0 0 10px 5px;
         }
         p{
+            position: absolute;
+            font-size:1.2em;
+            line-height: 42px;
+            transform: translate(0%, -22%);
+            padding-left: 55%;
             font-family:'bebasneueregular';
             color: var(--cor1);
         }
