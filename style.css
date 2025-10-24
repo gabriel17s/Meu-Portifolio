@@ -158,17 +158,9 @@ body{
         bottom: 0;
         width: 100%;
 
-        #icones{
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-        
         h1{
-            position: absolute;
-            top: 45%;
-            transform: translate(0%, -50%);
+            position: fixed;
+            line-height: 90%;
             font-size:3em;
             text-align: left;
             font-family: 'bebasneuebold';
@@ -176,34 +168,42 @@ body{
             max-width: 30%;
         }
 
-        img#contatos {
-            margin-left: 33%;
-            width: 30px;
-            height: auto;
-            padding: 0 0 10px 5px;
-        }
-        p{
+        article#icones{
+            display: inline-block;
+            color: white;
             position: absolute;
-            font-size:1.2em;
-            line-height: 42px;
-            transform: translate(0%, -22%);
-            padding-left: 55%;
-            font-family:'bebasneueregular';
+            right: 0;
+            left: auto;
+            padding-right: 7vw;
+            width: 45%;
         }
-        
+    
+        img#contatos {
+            width: 28px;
+            height: auto;
+            margin-right: 8px;
+        }
         img#contatos:hover {
             opacity: 90%;
             /*margin-top:2px;*/
         }
-        .linkedin:hover{
+        .sombracinza:hover img{
             filter: drop-shadow(
-            2px 2px 0px var(--cor2));}
-        .github:hover{
+            2px 2px 0px var(--cor2));
+        }
+        .sombraazul:hover img{
             filter: drop-shadow(
-            2px 2px 0px var(--cor3));}
-        .email:hover{
-            filter: drop-shadow(
-            2px 2px 0px var(--cor2));}
+            2px 2px 0px var(--cor3));
+        }
+
+        #textobranco{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-family:'bebasneueregular';
+            font-size: 1.4em;
+        }
     } 
 }
 
