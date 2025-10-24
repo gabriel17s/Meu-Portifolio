@@ -177,7 +177,7 @@ body{
             padding-right: 7vw;
             width: 45%;
         }
-    
+
         img#contatos {
             width: 28px;
             height: auto;
@@ -195,7 +195,6 @@ body{
             filter: drop-shadow(
             2px 2px 0px var(--cor3));
         }
-
         #textobranco{
             display: flex;
             align-items: center;
