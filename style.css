@@ -151,13 +151,14 @@ body{
         padding-top: 30px;;
         margin-top: 50px;
         background-color: var(--cor4);
+        color: var(--cor1);
         height: clamp(10%, calc(180px - 6vw), 25%);
         border-bottom: 40px;
         position: fixed;
         bottom: 0;
         width: 100%;
 
-        #conteudo{
+        #icones{
             position: absolute;
             left: 50%;
             top: 50%;
@@ -169,10 +170,7 @@ body{
             top: 45%;
             transform: translate(0%, -50%);
             font-size:3em;
-            padding-left: 7vw;
             text-align: left;
-            padding-right: 0px;
-            color: var(--cor1);
             font-family: 'bebasneuebold';
             margin: 0px;
             max-width: 30%;
@@ -191,7 +189,6 @@ body{
             transform: translate(0%, -22%);
             padding-left: 55%;
             font-family:'bebasneueregular';
-            color: var(--cor1);
         }
         
         img#contatos:hover {
