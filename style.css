@@ -137,6 +137,7 @@ body{
     padding-left: 7vw;
     margin: 0px;
     font-size: 2em;
+    padding-bottom: 10px;
     }
     section {
         display: flex;
@@ -198,21 +199,18 @@ body{
         }
 
         article#icones{
-            margin-top: -10px;
-            display: inline-block;
-            color: white;
-            position: absolute;
-            right: 0;
-            left: auto;
-            padding-right: 7vw;
+            display: flex;
+            position: fixed;
+            margin-top: 20px;
+            margin-right: 7vw;
+            right: 0px;
             width: 45%;
         }
 
         img#contatos {
-            margin-top: 10px;
-            width: 28px;
+            width: 42px;
             height: auto;
-            margin-right: 8px;
+            margin-left: 25px;
         }
         img#contatos:hover {
             opacity: 90%;

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoint
+Telas Pequenas: até 600
+Celular: 600 a 768
+Tablet: 768 a 992
+Desktop: 992 a 1200
+Grandes: acima de 1200
+*/
+@media screen and (max-width:800px){
+        article#icones a {
+        font-size:0px;
+    }
+}
+/*VERSÃO PARA TABLETS*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+
+/*VERSÃO PARA DESKTOP*/
+@media screen and (min-width: 992px) and (max-width:1500px){
+
+    article#icones {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end; 
+        gap: 20px; 
+    }
+}
+
+/*VERSÃO PARA TV E MAIOR
+@media screen and (min-width: 1200px){
+    
+}
