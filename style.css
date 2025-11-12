@@ -85,7 +85,7 @@ body{
     }  
  
     main.nome {
-        margin-top: clamp(60px, 10vw, 100px);
+        margin-top: clamp(50px, 10vw, 100px);
         padding-right: 7vw;
         padding-left: 7vw;
         
@@ -106,8 +106,8 @@ body{
             margin-top: 8px;
             font-family: 'bebasneueregular';
             font-size:1em;
-            text-align: left;
-            max-width: 52%;
+            text-align: justify;
+            max-width: 51%;
             margin-right: 0px;
         }
 
@@ -136,6 +136,7 @@ body{
     margin-top: 25px;
     padding-left: 7vw;
     margin: 0px;
+    font-size: 2em;
     }
     section {
         display: flex;
@@ -152,16 +153,26 @@ body{
 
     article{
         width: 33%;
+        box-sizing: border-box;
+        /*padding: 2px;*/
     }
     iframe{
         height: 100px;
         width: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5%;
     }
 
-    ::-webkit-scrollbar{
+    /*::-webkit-scrollbar{
         width: 0px;
         height: 0px;
-    }
+    }*/
     }
         
     footer{
@@ -221,7 +232,7 @@ body{
             text-decoration: none;
             color: white;
             font-family:'bebasneueregular';
-            font-size: 1.4em;
+            font-size: 1em;
         }
     } 
 }
