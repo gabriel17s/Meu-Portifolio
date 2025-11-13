@@ -37,7 +37,7 @@ body{
         div{
             text-transform: uppercase; /*maiusculas*/
             font-family: 'bebasneuebold';
-            font-size: 4.5vw;
+            font-size: 5vw;
             display: inline-block; /*mesma linha*/
             color: var(--cor4);
             /*border: 2px solid var(--cor5); /*Handbreak de borda*/
@@ -84,7 +84,7 @@ body{
     }  
  
     main.nome {
-        margin-top: 8vw;
+        margin-top: 10vw;
         
         h1{
             font-weight: bold;
@@ -130,7 +130,6 @@ body{
     font-size: 8vw;
     margin-right: 1000px;
     text-align: left;
-    margin-top: 25px;
     margin: 0px;
     font-size: 2em;
     padding-bottom: 10px;
@@ -153,7 +152,7 @@ body{
     }
 
     iframe{
-        height: 100px;
+        height: 25vw;
         width: 100%;
         overflow-x: hidden;
         overflow-y: scroll;
