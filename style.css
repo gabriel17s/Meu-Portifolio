@@ -23,7 +23,7 @@
 }
 
 body{
-    margin: 0px;
+    margin: 0 7vw 0 7vw;
     background-attachment: fixed;
 
     header{
@@ -37,7 +37,7 @@ body{
         div{
             text-transform: uppercase; /*maiusculas*/
             font-family: 'bebasneuebold';
-            font-size: clamp(10px, 4.5vw, 34px);
+            font-size: 4.5vw;
             display: inline-block; /*mesma linha*/
             color: var(--cor4);
             /*border: 2px solid var(--cor5); /*Handbreak de borda*/
@@ -47,7 +47,6 @@ body{
         }
         div.basico{
             text-align: left;
-            margin-left: 7vw;
             float: left;
         }
         div.basico:hover{ /*AO PASSAR O MOUSE -> HOVER é uma pseudoclasse*/
@@ -60,8 +59,8 @@ body{
         }
         div.linkavel{
             text-align: right;
+            padding-left: 20px;
             float: right;
-            margin-right: 7vw;
         }
         div.linkavel:hover{
             color: var(--cor3);
@@ -85,18 +84,16 @@ body{
     }  
  
     main.nome {
-        margin-top: clamp(50px, 10vw, 100px);
-        padding-right: 7vw;
-        padding-left: 7vw;
+        margin-top: 8vw;
         
         h1{
             font-weight: bold;
             font-family: 'bebasneuebold';
             /*font-size:3em; /* vw */
-            font-size: clamp(30px, 11vw, 80px);
+            font-size: 11vw;
             text-align: left;
             margin: 0px;
-            line-height: clamp(50px, 9vw, 65px);
+            line-height: 9vw;
 
             #nome{
                 color: var(--cor3);
@@ -112,7 +109,7 @@ body{
         }
 
         section{
-            width: clamp(50px, 22vw, 100%);
+            width: 37vw;
             float: right;
             object-fit: cover;
             overflow: hidden;
@@ -130,72 +127,62 @@ body{
     font-weight: bold;
     font-family: 'bebasneuebold';
     /*font-size:3em; /* vw */
-    font-size: clamp(25px, 8vw, 50px);
+    font-size: 8vw;
     margin-right: 1000px;
     text-align: left;
     margin-top: 25px;
-    padding-left: 7vw;
     margin: 0px;
     font-size: 2em;
     padding-bottom: 10px;
     }
     section {
         display: flex;
-        padding-left: 7vw;
-        padding-right: 7vw;
         h2{
             font-family: 'bebasneuebold';
             line-height: 0px;
         }
         p{
             font-family: 'bebasneueregular';
+            text-align: justify;
         }
-
 
     article{
         width: 50%;
         box-sizing: border-box;
-        /*padding: 2px;*/
+        padding: 0 5px 0 5px;
     }
+
     iframe{
         height: 100px;
         width: 100%;
         overflow-x: hidden;
         overflow-y: scroll;
-    }
-    
-    section {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5%;
-    }
-
-    /*::-webkit-scrollbar{
-        width: 0px;
-        height: 0px;
-    }*/
+        /*box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.134)*/
+        }
     }
         
     footer{
         display: flex;
         padding-top: 30px;
         margin-top: 50px;
+        height: 18%;
+        width: 100%;
         background-color: var(--cor4);
         color: var(--cor1);
-        height: clamp(10%, calc(170px - 6vw), 25%);
         border-bottom: 40px;
         position: fixed;
         bottom: 0;
-        width: 100%;
+        left: 0;
 
         h1{
+            padding-left: 7vw;
             position: fixed;
-            line-height: 90%;
-            font-size:3em;
+            line-height: 80%;
+            font-size: 3em;
             text-align: left;
             font-family: 'bebasneuebold';
             margin: 0px;
-            max-width: 30%;
+            width: 50%;
         }
 
         article#icones{
@@ -209,7 +196,7 @@ body{
         img#contatos {
             width: 42px;
             height: auto;
-            margin-left: 25px;
+            margin-left: 12px;
         }
         img#contatos:hover {
             opacity: 90%;
