@@ -84,7 +84,7 @@ body{
     }  
  
     main.nome {
-        margin-top: 5vh;
+        margin-top: 6vh;
         
         h1{
             font-weight: bold;
@@ -127,7 +127,7 @@ body{
     font-weight: bold;
     font-family: 'bebasneuebold';
     /*font-size:3em; /* vw */
-    font-size: 8vw;
+    font-size: 6vh;
     margin-right: 1000px;
     text-align: left;
     margin: 0px;
@@ -146,13 +146,12 @@ body{
         }
 
     article{
-        width: 50%;
         box-sizing: border-box;
         padding: 0 5px 0 5px;
     }
 
     iframe{
-        height: 15vh;
+        height: 20vh;
         width: 100%;
         overflow-x: hidden;
         overflow-y: scroll;
