@@ -151,7 +151,7 @@ body{
     }
 
     iframe{
-        height: 20vh;
+        height: 21vh;
         width: 100%;
         overflow-x: hidden;
         overflow-y: scroll;
@@ -162,8 +162,7 @@ body{
     footer{
         display: flex;
         padding-top: 30px;
-        margin-top: 50px;
-        height: 18%;
+        height: 17%;
         width: 100%;
         background-color: var(--cor4);
         color: var(--cor1);
