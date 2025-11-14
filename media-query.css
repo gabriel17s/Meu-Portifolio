@@ -7,24 +7,115 @@ Tablet: 768 a 992
 Desktop: 992 a 1200
 Grandes: acima de 1200
 */
-@media screen and (max-width:800px){
-        article#icones a {
+
+@media screen and (max-width:768px){
+    article#icones a {
         font-size:0px;
     }
+    .proj {
+        display: none;
+    }
+    .ftperfilvert{
+        display: none;
+    }
 }
+
 /*VERSÃO PARA TABLETS*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    
+    body{
+        background-color: aliceblue;
+        main.nome {
+        margin-top: 8vh;
+        section{
+            width: 33vw;}
+        img.ftperfil{
+            height: 25vh;
+            border-radius: 10px;}
+        .ftperfilvert{
+            display: none;
+         }
+        p{
+            max-width: 58%;
+            font-size: 1.4em;}
+        }
 
+        main.nome h1{
+            font-size: 8.5vh;
+            transition: 0.5s ease;
+            line-height: 9.5vw;
+        }
+
+        h1.projetos{
+            padding: 20px 0 20px 0;
+            font-size: 4.7vh;
+        }
+        section h2{
+            font-size: 2.2em;
+        }
+        section p{
+            font-size: 1.5em;
+        }
+
+        footer h1{
+            margin: 10px;
+            font-size: 4.8em;
+        }
+
+        footer article#icones{
+            display: flex;
+            position: fixed;
+            flex-direction: column;
+            margin: 2px;
+        }
+
+        footer img#contatos {
+            margin: 5px;
+            width: 5vw;
+        }
+        footer #textobranco{
+            font-size: 1.8em;
+        }
+    }
 }
 
 /*VERSÃO PARA DESKTOP*/
 @media screen and (min-width: 992px) and (max-width:1500px){
 
+    body main.nome h1{
+        font-size: 14vh;
+        line-height: 11vh;
+    }
+    body main.nome p{
+        font-size: 1.3em;
+        max-width: 57.5%;
+    }
+
     article#icones {
         display: flex;
         flex-direction: row;
         justify-content: flex-end; 
-        gap: 20px; 
+        gap: 20px;
+    }
+    img.ftperfil{
+        display: none;
+    }
+    img.ftperfilvert{
+        position: absolute;
+        height: 35vh;
+        border-radius: 10px;
+        transform: translate(0px, -20px);
+    }
+    body footer{
+        height: 8%;
+
+        img#contatos{
+            width: 4vh;
+            padding-right: 10px;
+        }
+        article#icones{
+            transform: translate(0px, -20px);
+        }
     }
 }
 

@@ -37,7 +37,7 @@ body{
         div{
             text-transform: uppercase; /*maiusculas*/
             font-family: 'bebasneuebold';
-            font-size: 5vw;
+            font-size: 3.4vh;
             display: inline-block; /*mesma linha*/
             color: var(--cor4);
             /*border: 2px solid var(--cor5); /*Handbreak de borda*/
@@ -128,7 +128,7 @@ body{
     font-family: 'bebasneuebold';
     /*font-size:3em; /* vw */
     font-size: 6vh;
-    margin-right: 1000px;
+    margin-right: 10000px;
     text-align: left;
     margin: 0px;
     font-size: 2em;
@@ -146,6 +146,7 @@ body{
         }
 
     article{
+        width: 100vw;
         box-sizing: border-box;
         padding: 0 5px 0 5px;
     }
