@@ -9,9 +9,6 @@ Grandes: acima de 1200
 */
 
 @media screen and (max-width:768px){
-    article#icones a {
-        font-size:0px;
-    }
     .proj {
         display: none;
     }
