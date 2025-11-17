@@ -161,60 +161,50 @@ body{
     }
         
     footer{
-        display: flex;
-        padding-top: 30px;
-        height: 17%;
-        width: 100%;
+        height: 20vh;
         background-color: var(--cor4);
-        color: var(--cor1);
-        border-bottom: 40px;
+        margin: 0;
         position: fixed;
         bottom: 0;
         left: 0;
+        right: 0;
+        
 
-        h1{
-            padding-left: 7vw;
-            position: fixed;
-            line-height: 80%;
-            font-size: 3em;
-            text-align: left;
-            font-family: 'bebasneuebold';
-            margin: 0px;
-            width: 50%;
+        main.container{
+            height: 15vh;
+            display: flex;
+            padding: 2vh 7vw 0 7vw;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
         }
 
-        article#icones{
-            display: flex;
-            position: fixed;
-            margin-top: 20px;
-            right: 7vw;
-            width: 45%;
+        main.items{
+            flex: auto;
+            right: 0;
+        }
+
+        main.items h1{
+            width: 45vw;
+            font-size: 3.2em;
+            line-height: 90%;
+            margin: 0;
+            text-align: left;
+            font-family: 'bebasneuebold';
+            color: var(--cor1);
         }
 
         img#contatos {
-            width: 42px;
-            height: auto;
-            margin-left: 12px;
+            width: auto;
+            height: 42px;
+            padding: 10px;
         }
         img#contatos:hover {
-            opacity: 90%;
+            opacity: 80%;
             /*margin-top:2px;*/
         }
-        .sombracinza:hover img{
-            filter: drop-shadow(
-            2px 2px 0px var(--cor2));
-        }
-        .sombraazul:hover img{
-            filter: drop-shadow(
-            2px 2px 0px var(--cor3));
-        }
-        #textobranco{
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: white;
-            font-family:'bebasneueregular';
-            font-size: 1em;
+        span {
+            display: none;
         }
     } 
 }
